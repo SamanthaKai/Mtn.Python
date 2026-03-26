@@ -1,2 +1,2 @@
 # Mtn.Pythong
-Just a documentation of my pythong journey
+Just a documentation of my python journey
