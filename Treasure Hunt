@@ -1,0 +1,55 @@
+print(r'''
+            ____...------------...____
+               _.-"` /o/__ ____ __ __  __ \o\_`"-._
+             .'     / /                    \ \     '.
+             |=====/o/======================\o\=====|
+             |____/_/________..____..________\_\____|
+             /   _/ \_     <_o#\__/#o_>     _/ \_  \
+             \_________\####/_________/
+              |===\!/========================\!/===|
+              |   |=|          .---.         |=|   |
+              |===|o|=========/     \========|o|===|
+              |   | |         \() ()/        | |   |
+              |===|o|======{'-.) A (.-'}=====|o|===|
+              | __/ \__     '-.\uuu/.-'    __/ \__ |
+              |==== .'.'^'.'.====|
+          jgs |  _\o/   __  {.' __  '.} _   _\o/  _|
+              `""""-""""""""""""""""""""""""""-""""`
+
+''')
+print("Here to try your luck finding treasure? Let's see if you can be the Pirate Lord")
+print("Your mission is to use the hints to find the treasure.")
+
+step1 = input("Go left or right? Right takes you to the cliff and left takes you to the sea shore. Choose right!\n").lower().strip()
+
+if step1 == "right":
+    print("You fell over the cliff!! Game over!!!")
+
+elif step1 == "left":
+    step2 = input("Swim or wait?\n").lower().strip()
+
+    if step2 == "swim":
+        print("Did you think Mr.Shark didn't want a free meal? You died!!")
+
+    elif step2 == "wait":
+        print("Patience is important even for a pirate scramble.\n")
+        final_step = input("Now choose a door. Red, Yellow or Blue?\n").lower().strip()
+        if final_step == "red":
+            print("dead")
+        elif final_step == "blue":
+            print("dead")
+        elif final_step == "yellow":
+            print("You found the treasure!!! Here is your crown as well Your Majesty. Hail the Pirate King!!!")
+            print(r'''
+         _.+._
+       (^\/^\/^)
+        \@*@*@/
+  jgs   {_____}
+''')
+        else:
+            print("Enter the right door.")
+    else:
+        print("Choose the right option!! ")
+else:
+    print("Choose the right option!!")
+
