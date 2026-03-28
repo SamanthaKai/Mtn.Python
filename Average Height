@@ -1,0 +1,20 @@
+# this one tested me, calculating the average height of students
+
+student_heights = input("Enter the student heights: ").split()
+
+total = 0
+
+for n in range(0, len(student_heights)):
+    student_heights[n] = int(student_heights[n])
+
+for height in student_heights:
+    total += height
+numStudents = 0
+for student in student_heights:
+    numStudents+= 1
+
+average_height = round(total/numStudents, 0)
+
+print(f"You entered {student_heights}")
+print(f"Total is {total}")
+print(f"Average height is {average_height}")
